@@ -1,3 +1,5 @@
 /venv/
 /media/
 /resultados/
+bridges.py
+/__pycache__/

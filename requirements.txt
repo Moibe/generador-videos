@@ -1,0 +1,8 @@
+openai
+datasets
+openai[voice_helpers]
+transformers
+torch
+soundfile
+sentencepiece
+melo.api
