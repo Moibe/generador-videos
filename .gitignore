@@ -4,3 +4,4 @@
 bridges.py
 /__pycache__/
 *.mp4
+/audio_tests/
