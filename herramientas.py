@@ -35,3 +35,12 @@ def lista_archivos(directorio):
         print(f"Ocurrió un error al acceder a la carpeta: {e}")
         nombres_archivos = []  # Asegurarse de que la lista esté vacía en caso de error
         return nombres_archivos
+    
+def delete_file_on_complete(path: str):
+    """Callback para borrar un archivo después de que la respuesta se haya enviado."""
+    if os.path.exists(path):
+        try:
+            os.remove(path)
+            print(f"Archivo eliminado correctamente en BackgroundTasks: {path}")
+        except Exception as e:
+            print(f"ERROR: No se pudo eliminar el archivo {path} en BackgroundTasks: {e}")
